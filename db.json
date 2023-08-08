@@ -1,0 +1,249 @@
+{
+  "activities": [
+    {
+      "id": 1,
+      "name": "Ricardo Cooper",
+      "img": "/assets/images/avatar-1.svg",
+      "email": "ricardo.cooper@example.com",
+      "date": "9:30 AM, January 7, 2020",
+      "phone": "612-512-2048",
+      "case": "1234-5678-901",
+      "parent": "Mary Cooper",
+      "parentRole": "Mother",
+      "checked": true
+    },
+    {
+      "id": 2,
+      "name": "Kristen Ramos",
+      "img": "/assets/images/avatar-2.svg",
+      "email": "kristen.ramos@example.com",
+      "date": "11:00 AM, January 7, 2020",
+      "phone": "612-512-2048",
+      "case": "1234-5678-901",
+      "parent": "Mary Cooper",
+      "parentRole": "Mother",
+      "checked": false
+    },
+    {
+      "id": 3,
+      "name": "Ted Fox",
+      "img": "/assets/images/avatar-3.svg",
+      "email": "ted.fox@example.com",
+      "date": "9:30 AM, January 7, 2020",
+      "phone": "612-512-2048",
+      "case": "1234-5678-901",
+      "parent": "Mary Cooper",
+      "parentRole": "Mother",
+      "checked": true
+    },
+    {
+      "id": 4,
+      "name": "Kristen Ramos",
+      "img": "/assets/images/avatar-2.svg",
+      "email": "kristen.ramos@example.com",
+      "date": "11:00 AM, January 7, 2020",
+      "phone": "612-512-2048",
+      "case": "1234-5678-901",
+      "parent": "Mary Cooper",
+      "parentRole": "Mother",
+      "checked": false
+    }
+  ],
+  "activities2": [
+    {
+      "id": 1,
+      "name": "Ricardo Cooper",
+      "img": "/assets/images/baby-1.svg",
+      "email": "ricardo.cooper@example.com",
+      "date": "9:30 AM, January 7, 2020",
+      "phone": "612-512-2048",
+      "case": "1234-5678-901",
+      "parent": "Mary Cooper",
+      "parentRole": "Mother",
+      "checked": true
+    },
+    {
+      "id": 2,
+      "name": "Kristen Ramos",
+      "img": "/assets/images/baby-2.svg",
+      "email": "kristen.ramos@example.com",
+      "date": "11:00 AM, January 7, 2020",
+      "phone": "612-512-2048",
+      "case": "1234-5678-901",
+      "parent": "Mary Cooper",
+      "parentRole": "Mother",
+      "checked": false
+    },
+    {
+      "id": 3,
+      "name": "Ted Fox",
+      "img": "/assets/images/baby-3.svg",
+      "email": "ted.fox@example.com",
+      "date": "9:30 AM, January 7, 2020",
+      "phone": "612-512-2048",
+      "case": "1234-5678-901",
+      "parent": "Mary Cooper",
+      "parentRole": "Mother",
+      "checked": true
+    }
+  ],
+
+  "students": [
+    {
+      "id": 1,
+      "name": "Jane Cooper",
+      "img": "/assets/images/avatar-4.svg",
+      "email": "jane.cooper@example.com",
+      "parentJob": "Regional Paradigm Technician",
+      "parentStatus": "Optimization",
+      "status": "Active",
+      "role": "Admin"
+    },
+    {
+      "id": 2,
+      "name": "Cody Fisher",
+      "img": "/assets/images/avatar-5.svg",
+      "email": "cody.fisher@example.com",
+      "parentJob": "Product Directives Officer",
+      "parentStatus": "Intranet",
+      "status": "Active",
+      "role": "Owner"
+    },
+    {
+      "id": 3,
+      "name": "Esther Howard",
+      "img": "/assets/images/avatar-6.svg",
+      "email": "esther.howard@example.com",
+      "parentJob": "Forward Response Developer",
+      "parentStatus": "Directives",
+      "status": "Active",
+      "role": "Member"
+    },
+    {
+      "id": 4,
+      "name": "Jenny Wilson",
+      "img": "/assets/images/avatar-7.svg",
+      "email": "jenny.wilson@example.com",
+      "parentJob": "Central Security Manager",
+      "parentStatus": "Program",
+      "status": "Active",
+      "role": "Member"
+    },
+    {
+      "id": 5,
+      "name": "Kristin Watson",
+      "img": "/assets/images/avatar-8.svg",
+      "email": "kristin.watson@example.com",
+      "parentJob": "Lead Implementation Liaison",
+      "parentStatus": "Mobility",
+      "status": "Active",
+      "role": "Admin"
+    },
+    {
+      "id": 6,
+      "name": "Cameron Williamson",
+      "img": "/assets/images/avatar-9.svg",
+      "email": "cameron.williamson@example.com",
+      "parentJob": "Internal Applications Engineer",
+      "parentStatus": "Security",
+      "status": "Active",
+      "role": "Member"
+    }
+  ],
+  "students2": [
+    {
+      "id": 1,
+      "name": "Cody Fisher",
+      "img": "/assets/images/baby-3.svg",
+      "email": "cody.fisher@example.com",
+      "parentJob": "Mary Cooper",
+      "parentStatus": "Mother",
+      "status": "Active",
+      "role": "Student"
+    },
+    {
+      "id": 2,
+      "name": "Jane Cooper",
+      "img": "/assets/images/baby-1.svg",
+      "email": "jane.cooper@example.com",
+      "parentJob": "Dody Fisher",
+      "parentStatus": "Mother",
+      "status": "Active",
+      "role": "Student"
+    },
+    {
+      "id": 3,
+      "name": "Esther Howard",
+      "img": "/assets/images/baby-2.svg",
+      "email": "esther.howard@example.com",
+      "parentJob": "Arthur Howard",
+      "parentStatus": "Father",
+      "status": "Active",
+      "role": "Guest student"
+    },
+    {
+      "id": 4,
+      "name": "Jenny Wilson",
+      "img": "/assets/images/baby-4.svg",
+      "email": "jenny.wilson@example.com",
+      "parentJob": "Mohamed Mohamud",
+      "parentStatus": "Father",
+      "status": "Active",
+      "role": "Student"
+    },
+    {
+      "id": 5,
+      "name": "Kristin Watson",
+      "img": "/assets/images/avatar-8.svg",
+      "email": "kristin.watson@example.com",
+      "parentJob": "Abby Watson",
+      "parentStatus": "Mother",
+      "status": "Active",
+      "role": "Member"
+    },
+    {
+      "id": 6,
+      "name": "Cameron Williamson",
+      "img": "/assets/images/baby-5.svg",
+      "email": "cameron.williamson@example.com",
+      "parentJob": "Jack Will",
+      "parentStatus": "Father",
+      "status": "Active",
+      "role": "Student"
+    }
+  ],
+  "parents": [
+    {
+      "id": 1,
+      "name": "Ricardo Cooper",
+      "img": "/assets/images/avatar-1.svg",
+      "email": "ricardo.cooper@example.com",
+      "date": "9:30 AM, January 7, 2020",
+      "checked": true
+    },
+    {
+      "id": 2,
+      "name": "Kristen Ramos",
+      "img": "/assets/images/avatar-2.svg",
+      "email": "kristen.ramos@example.com",
+      "date": "11:00 AM, January 7, 2020",
+      "checked": false
+    },
+    {
+      "id": 3,
+      "name": "Ted Fox",
+      "img": "/assets/images/avatar-3.svg",
+      "email": "ted.fox@example.com",
+      "date": "9:30 AM, January 7, 2020",
+      "checked": true
+    },
+    {
+      "id": 4,
+      "name": "Kristen Ramos",
+      "img": "/assets/images/avatar-2.svg",
+      "email": "kristen.ramos@example.com",
+      "date": "11:00 AM, January 7, 2020",
+      "checked": false
+    }
+  ]
+}
