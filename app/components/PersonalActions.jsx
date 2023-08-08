@@ -1,3 +1,6 @@
+'use client';
+
+import { useState } from 'react';
 import Link from 'next/link';
 import {
   PencilIcon,
@@ -8,10 +11,22 @@ import {
 import { DocumentArrowDownIcon } from '@heroicons/react/24/outline';
 
 import ButtonWithIcon from '@/app/components/common/ButtonWithIcon';
+import ExportBill from './ExportBill';
 
 export default function PersonalActions() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
   return (
     <div className="flex flex-col sm:flex-row lg:items-center justify-between space-y-6 lg:space-y-4">
+      <ExportBill closeModal={closeModal} isOpen={isOpen} />
       <div className="space-y-2">
         <Link
           href=""
@@ -35,7 +50,10 @@ export default function PersonalActions() {
             Contact <span className="hidden sm:inline-block">Parent</span>
           </span>
         </ButtonWithIcon>
-        <ButtonWithIcon className="text-white bg-indigo-600 border-indigo-600 shadow-sm">
+        <ButtonWithIcon
+          className="text-white bg-indigo-600 border-indigo-600 shadow-sm"
+          onClick={openModal}
+        >
           <DocumentArrowDownIcon className="w-5 h-5" />
 
           <span>
