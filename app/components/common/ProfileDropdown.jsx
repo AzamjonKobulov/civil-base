@@ -41,7 +41,7 @@ export default function MyModal({ closeModal, isDropOpen }) {
                     <div className="flex space-x-3">
                       <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden">
                         <Image
-                          src="/assets/images/avatar-4.svg"
+                          src="/assets/images/avatar-4.png"
                           alt="Image"
                           width={40}
                           height={40}

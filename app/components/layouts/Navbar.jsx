@@ -85,7 +85,7 @@ export default function Navbar() {
         </button>
         <button onClick={openModal}>
           <Image
-            src="/assets/images/avatar-1.svg"
+            src="/assets/images/avatar-1.png"
             alt="User"
             width={32}
             height={32}
