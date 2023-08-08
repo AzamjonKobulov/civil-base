@@ -5,12 +5,11 @@
   "proxy": "http://localhost:5000",
   "scripts": {
     "go": "next dev",
-    "built": "next build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "json-server": "json-server --watch db.json --port 5000",
-    "dev": "concurrently \"npm run json-server\" \"npm run go\"",
-    "build": "concurrently \"npm run json-server\" \"npm run built\""
+    "dev": "concurrently \"npm run json-server\" \"npm run go\""
   },
   "dependencies": {
     "@headlessui/react": "^1.7.16",
