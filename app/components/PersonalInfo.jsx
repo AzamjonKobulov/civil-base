@@ -7,11 +7,14 @@ import {
 } from '@heroicons/react/24/solid';
 
 async function fetchData(id) {
-  const res = await fetch(`http://localhost:5000/activities2/${id}`, {
-    next: {
-      revalidate: 60,
-    },
-  });
+  const res = await fetch(
+    `https://fake-api-civil-base.vercel.app/activities2/${id}`,
+    {
+      next: {
+        revalidate: 60,
+      },
+    }
+  );
 
   const data = await res.json();
   return data;

@@ -4,13 +4,13 @@ import PinnedList from './components/PinnedList';
 import StudentsList from './components/StudentsList';
 
 async function fetchData() {
-  const res = await fetch('http:localhost:5000/activities', {
+  const res = await fetch('https://fake-api-civil-base.vercel.app/activities', {
     next: {
       revalidate: 60,
     },
   });
 
-  const res2 = await fetch('http:localhost:5000/students', {
+  const res2 = await fetch('https://fake-api-civil-base.vercel.app/students', {
     next: {
       revalidate: 60,
     },

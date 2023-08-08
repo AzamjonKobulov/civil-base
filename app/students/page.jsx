@@ -2,13 +2,16 @@ import ActivityList from '../components/ActivityList';
 import StudentsList from '../components/StudentsList';
 
 async function fetchData() {
-  const res = await fetch('http:localhost:5000/activities2', {
-    next: {
-      revalidate: 60,
-    },
-  });
+  const res = await fetch(
+    'https://fake-api-civil-base.vercel.app/activities2',
+    {
+      next: {
+        revalidate: 60,
+      },
+    }
+  );
 
-  const res2 = await fetch('http:localhost:5000/students2', {
+  const res2 = await fetch('https://fake-api-civil-base.vercel.app/students2', {
     next: {
       revalidate: 60,
     },
