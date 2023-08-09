@@ -31,7 +31,7 @@ export default function StudentStats() {
           <p className="text-base">April 15, 2023</p>
         </div>
       </div>
-      <div className="flex items-center space-x-4 sm:space-x-6 px-5 py-7 md:py-5 rounded-md shadow-md">
+      <div className="flex items-center space-x-4 sm:space-x-6 px-5 py-8 lg:py-5 rounded-md shadow-md">
         <p className="text-[4.375rem] font-medium text-brand-value">360</p>
         <p className="text-lg">Lifetime Billable hours</p>
       </div>

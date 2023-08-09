@@ -19,19 +19,34 @@ export default function Chart() {
   };
 
   const options = {
+    responsive: true,
+    maintainAspectRatio: false,
     plugins: {
-      datalabels: {
-        color: '#fff', // Set color for the labels
-        formatter: (value) => {
-          return value; // Display the data value as the label
-        },
+      legend: {
+        display: false,
+        position: 'top',
+      },
+      label: {
+        display: true,
       },
     },
   };
 
   return (
-    <div className="max-w-[12.5rem]">
-      <Doughnut data={data} options={options}></Doughnut>
+    <div className="flex">
+      <div className="w-2/3">
+        <Doughnut data={data} options={options}></Doughnut>
+      </div>
+      <div className="text-xs text-brand-gray-200 space-y-2 mt-3">
+        <div className="flex items-center space-x-2">
+          <div className="w-5 h-2 bg-[#165BAA]"></div>
+          <p>Remaining</p>
+        </div>
+        <div className="flex items-center space-x-2">
+          <div className="w-5 h-2 bg-[#A155B9]"></div>
+          <p>Utilized</p>
+        </div>
+      </div>
     </div>
   );
 }
