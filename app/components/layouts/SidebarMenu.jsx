@@ -50,6 +50,7 @@ const links = [
 
 export default function SidebarMenu({ isOpen, onClose }) {
   const pathname = usePathname();
+  const alphabetPattern = /^[a-zA-Z]/;
 
   return (
     <aside

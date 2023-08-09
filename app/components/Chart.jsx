@@ -3,6 +3,7 @@
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 import 'chartjs-plugin-datalabels'; // Import the plugin
+
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 export default function Chart() {
@@ -24,10 +25,9 @@ export default function Chart() {
     plugins: {
       legend: {
         display: false,
-        position: 'top',
       },
-      label: {
-        display: true,
+      datalabels: {
+        formatter: data,
       },
     },
   };
@@ -35,7 +35,7 @@ export default function Chart() {
   return (
     <div className="flex">
       <div className="w-2/3">
-        <Doughnut data={data} options={options}></Doughnut>
+        <Doughnut data={data} options={options} />
       </div>
       <div className="text-xs text-brand-gray-200 space-y-2 mt-3">
         <div className="flex items-center space-x-2">
