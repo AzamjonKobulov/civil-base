@@ -46,7 +46,7 @@ export default function Navbar() {
       >
         <Bars3Icon className="w-6 h-6" />
       </button>
-      <div className="flex-1 flex items-center space-x-3 py-2 lg:py-3 pr-3">
+      <div className="flex-1 flex items-center space-x-3 py-2.5 lg:py-3.5 pr-3">
         <label htmlFor="search" className="cursor-pointer">
           <MagnifyingGlassIcon className="w-5 h-5 text-gray-400" />
         </label>
