@@ -30,7 +30,7 @@ export default function Chart() {
   };
 
   return (
-    <div className="w-4/5">
+    <div className="max-w-[12.5rem]">
       <Doughnut data={data} options={options}></Doughnut>
     </div>
   );
