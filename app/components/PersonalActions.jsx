@@ -10,7 +10,7 @@ import {
 
 import { DocumentArrowDownIcon } from '@heroicons/react/24/outline';
 
-import ButtonWithIcon from '@/app/components/common/ButtonWithIcon';
+import ButtonWithIcon from '../components/common/ButtonWithIcon';
 import ExportBill from './ExportBill';
 
 export default function PersonalActions() {
