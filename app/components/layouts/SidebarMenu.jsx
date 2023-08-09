@@ -1,5 +1,4 @@
-'use client';
-
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -15,7 +14,6 @@ const links = [
   {
     id: 1,
     label: 'Home',
-
     icon: HomeIcon,
     path: '/',
   },
@@ -50,7 +48,6 @@ const links = [
 
 export default function SidebarMenu({ isOpen, onClose }) {
   const pathname = usePathname();
-  const alphabetPattern = /^[a-zA-Z]/;
 
   return (
     <aside
@@ -65,42 +62,46 @@ export default function SidebarMenu({ isOpen, onClose }) {
         />
       </div>
       <div className="space-y-1 text-gray-900 font-medium px-2">
-        {links.map((link) => (
-          <Link
-            key={link.id}
-            href={link.path}
-            className={` ${
-              pathname === link.path ? 'bg-gray-100' : ''
-            } flex items-center justify-between rounded-md py-2 pl-2 pr-3`}
-            onClick={onClose}
-          >
-            <div className="flex items-center space-x-3">
-              <link.icon
-                className={`${
-                  pathname === link.path ? 'text-indigo-500' : 'text-gray-400'
-                } w-6 h-6`}
-              />
-              <span
-                className={`${
-                  pathname === link.path ? 'text-indigo-500' : 'text-gray-600'
-                }`}
-              >
-                {link.label}
-              </span>
-            </div>
-            {link.stat && (
-              <span
-                className={`${
-                  pathname === link.path
-                    ? 'bg-indigo-500 text-white'
-                    : 'text-gray-600'
-                } bg-gray-100  rounded-full w-9 h-5 grid place-content-center`}
-              >
-                {link.stat}
-              </span>
-            )}
-          </Link>
-        ))}
+        {links.map((link) => {
+          const isActive =
+            pathname === link.path ||
+            (pathname.startsWith(link.path) && link.path !== '/');
+
+          return (
+            <Link
+              key={link.id}
+              href={link.path}
+              className={`${
+                isActive ? 'bg-gray-100' : ''
+              } flex items-center justify-between rounded-md py-2 pl-2 pr-3`}
+              onClick={onClose}
+            >
+              <div className="flex items-center space-x-3">
+                <link.icon
+                  className={`${
+                    isActive ? 'text-indigo-500' : 'text-gray-400'
+                  } w-6 h-6`}
+                />
+                <span
+                  className={`${
+                    isActive ? 'text-indigo-500' : 'text-gray-600'
+                  }`}
+                >
+                  {link.label}
+                </span>
+              </div>
+              {link.stat && (
+                <span
+                  className={`${
+                    isActive ? 'bg-indigo-500 text-white' : 'text-gray-600'
+                  } bg-gray-100  rounded-full w-9 h-5 grid place-content-center`}
+                >
+                  {link.stat}
+                </span>
+              )}
+            </Link>
+          );
+        })}
       </div>
     </aside>
   );

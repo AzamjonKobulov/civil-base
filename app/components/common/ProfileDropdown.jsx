@@ -8,8 +8,6 @@ import Button from './Button';
 export default function MyModal({ closeModal, isDropOpen }) {
   return (
     <>
-      <div className="fixed inset-x-0 flex items-center justify-center"></div>
-
       <Transition appear show={isDropOpen} as={Fragment}>
         <Dialog as="div" className="relative z-10" onClose={closeModal}>
           <Transition.Child
