@@ -35,7 +35,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className="fixed top-0 right-0 left-0 lg:left-64 bg-white z-40 flex items-center gap-x-5 py-2 px-4 shadow">
+    <div className="fixed top-0 right-0 left-0 lg:left-64 bg-white z-40 flex items-center gap-x-3 lg:gap-x-5 py-2 px-4 shadow">
       <SidebarMenu isOpen={isOpen} onClose={handleClose} />
       {isOpen === 'translate-x-0' ? (
         <MenuOverlay onClose={handleClose} />
