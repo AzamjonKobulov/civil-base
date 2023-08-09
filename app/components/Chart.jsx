@@ -33,7 +33,7 @@ export default function Chart() {
         },
         font: {
           weight: 700,
-          size: 15,
+          size: 16,
         },
       },
     },
