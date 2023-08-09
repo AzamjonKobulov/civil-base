@@ -4,8 +4,8 @@ import AttendanceData from './AttendanceData';
 export default function AttendanceDataList({ data }) {
   return (
     <div className="mt-8">
-      <div className="flex items-center justify-between">
-        <div className="flex items-center space-x-4">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4">
+        <div className="flex items-center justify-between space-x-4">
           <h4>Attendance Data</h4>
           <div class="inline-flex rounded-md shadow-xs">
             <button class="p-2 grid place-content-center -ml-px first:rounded-l-md first:ml-0 last:rounded-r-lg border border-gray-300 font-medium bg-white text-gray-500">
@@ -16,11 +16,8 @@ export default function AttendanceDataList({ data }) {
               <ChevronRightIcon className="w-3.5 h-3.5 text-gray-400" />
             </button>
           </div>
-          <p className="text-black font-medium">
-            1 April, 2023 — 14 April 2023
-          </p>
         </div>
-        <div className="flex items-center space-x-3"></div>
+        <p className="text-black font-medium">1 April, 2023 — 14 April 2023</p>
       </div>
       <div class="flex flex-col mt-6">
         <div class="-m-1.5 overflow-x-auto">
