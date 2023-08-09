@@ -29,6 +29,7 @@ export default async function page() {
     <div>
       <h2>Minnesote Daycare</h2>
       <ActivityList data={data} />
+
       <StudentsList data={data2} />
     </div>
   );

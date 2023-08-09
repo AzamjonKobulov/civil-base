@@ -93,7 +93,7 @@ export default function SidebarMenu({ isOpen, onClose }) {
                   pathname === link.path
                     ? 'bg-indigo-500 text-white'
                     : 'text-gray-600'
-                } bg-gray-100  rounded-full px-3 py-0.5`}
+                } bg-gray-100  rounded-full w-9 h-5 grid place-content-center`}
               >
                 {link.stat}
               </span>
