@@ -29,39 +29,10 @@ export default function Chart() {
     },
   };
 
-  const plugins = [
-    {
-      id: 'insideLabelsPlugin',
-      afterDatasetsDraw(chart) {
-        const {
-          ctx,
-          data: { datasets },
-          chartArea: { width, height },
-        } = chart;
-
-        const chartData = chart.getDatasetMeta(0).data;
-
-        chartData.forEach((datapoint, i) => {
-          const { x, y } = datapoint.getCenterPoint();
-          const value = datasets[1].data[i];
-          const sumOfValues = datasets[1].data.reduce((acc, val) => acc + val);
-          ctx.textBaseline = 'middle';
-
-          const textX = x - ctx.measureText(value).width / 2;
-
-          if (value / sumOfValues > 0.05) {
-            ctx.fillStyle = '#f4f6f7';
-            ctx.fillText(datasets[1].data[i], textX, y);
-          }
-        });
-      },
-    },
-  ];
-
   return (
     <div className="flex">
       <div className="w-2/3">
-        <Doughnut data={data} options={options} plugins={plugins} />
+        <Doughnut data={data} options={options} />
       </div>
       <div className="text-xs text-brand-gray-200 space-y-2">
         <div className="flex items-center space-x-2">
