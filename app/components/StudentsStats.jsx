@@ -17,21 +17,21 @@ export default function StudentStats() {
         </div>
       </div>
 
-      <div className="flex items-center space-x-6 p-5 rounded-md shadow-md">
-        <ExclamationTriangleIcon className="w-14 h-14 text-[#F59E0B]" />
+      <div className="flex items-center space-x-4 sm:space-x-6 p-4 sm:p-5 rounded-md shadow-md">
+        <ExclamationTriangleIcon className="w-14 h-14 shrink-0 text-[#F59E0B]" />
         <div className="text-brand-gray-200">
           <p className="text-lg font-semibold">Bills Due</p>
           <p className="text-base">for 03/14/2023 to 03/31/2023</p>
         </div>
       </div>
-      <div className="flex items-center space-x-6 p-5 rounded-md shadow-md">
-        <CakeIcon className="w-14 h-14 text-[#5165C3]" />
+      <div className="flex items-center space-x-4 sm:space-x-6 p-4 sm:p-5 rounded-md shadow-md">
+        <CakeIcon className="w-14 h-14 shrink-0 text-[#5165C3]" />
         <div className="text-brand-gray-200">
           <p className="text-lg font-semibold">Birthday Reminder</p>
           <p className="text-base">April 15, 2023</p>
         </div>
       </div>
-      <div className="flex items-center space-x-6 px-5 py-8 md:py-5 rounded-md shadow-md">
+      <div className="flex items-center space-x-4 sm:space-x-6 px-5 py-7 md:py-5 rounded-md shadow-md">
         <p className="text-[4.375rem] font-medium text-brand-value">360</p>
         <p className="text-lg">Lifetime Billable hours</p>
       </div>
