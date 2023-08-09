@@ -29,10 +29,11 @@ export default function Chart() {
       datalabels: {
         color: '#fff',
         formatter: (value) => {
-          return value + ' h'; // Display the data value as the label
+          return value + ' hrs'; // Display the data value as the label
         },
         font: {
           weight: 700,
+          size: 15,
         },
       },
     },
