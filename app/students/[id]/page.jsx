@@ -1,7 +1,7 @@
-import AttendanceDataList from '@/app/components/AttendanceDataList';
-import PersonalActions from '@/app/components/PersonalActions';
-import PersonalInfo from '@/app/components/PersonalInfo';
-import StudentStats from '@/app/components/StudentsStats';
+import AttendanceDataList from '../../components/AttendanceDataList';
+import PersonalActions from '../../components/PersonalActions';
+import PersonalInfo from '../../components/PersonalInfo';
+import StudentStats from '../../components/StudentsStats';
 
 const data = [
   {
