@@ -7,16 +7,15 @@ import ChartDataLabels from 'chartjs-plugin-datalabels';
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 export default function Chart() {
-  let remaining = 72;
-  let utilized = 48;
-
   const data = {
-    labels: ['Remaining', 'Utilized'],
+    labels: ['Remaining', 'Utilized', 'Go', 'Come', 'Stay'],
     datasets: [
       {
-        data: [remaining, utilized],
-        backgroundColor: ['#165BAA', '#A155B9'],
-        borderColor: ['#165BAA', '#A155B9'],
+        data: [72, 48],
+        backgroundColor: ['#165BAA', '#A155B9', '#c4c4c4', '#000', '#7c7c'],
+        borderColor: ['#165BAA', '#A155B9', '#c4c4c4', '#000', '#7c7c'],
+        hoverOffset: 4,
+        rotation: (90 / 450) * 360,
       },
     ],
   };
@@ -29,7 +28,7 @@ export default function Chart() {
       datalabels: {
         color: '#fff',
         formatter: (value) => {
-          return value + 'h'; // Display the data value as the label
+          return value + ' hours'; // Display the data value as the label
         },
         font: {
           weight: 700,
