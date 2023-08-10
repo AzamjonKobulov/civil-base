@@ -34,7 +34,7 @@ export default function Activity({ item }) {
             <span>{item.checked ? 'Checked in' : 'Checked out'}</span>
           </div>
         </div>
-        <button>
+        <button aria-label="Chevron right">
           <ChevronRightIcon className="w-3.5 h-3.5 text-gray-400" />
         </button>
       </div>

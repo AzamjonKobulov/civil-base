@@ -14,7 +14,7 @@ export default function Pinned({ item }) {
             <span>{item.status}</span>
           </div>
         </div>
-        <button>
+        <button aria-label="Setting">
           <svg
             width="20"
             height="20"

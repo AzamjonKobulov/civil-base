@@ -20,7 +20,3 @@
   background: rgba(217, 217, 217, 0.05);
   backdrop-filter: blur(9px);
 }
-
-canvas {
-  @apply w-56 h-56;
-}

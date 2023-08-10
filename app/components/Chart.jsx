@@ -12,8 +12,8 @@ export default function Chart() {
     datasets: [
       {
         data: [72, 48],
-        backgroundColor: ['#165BAA', '#A155B9', '#c4c4c4', '#000', '#7c7c'],
-        borderColor: ['#165BAA', '#A155B9', '#c4c4c4', '#000', '#7c7c'],
+        backgroundColor: ['#165BAA', '#A155B9'],
+        borderColor: ['#165BAA', '#A155B9'],
         hoverOffset: 4,
         rotation: (90 / 450) * 360,
       },

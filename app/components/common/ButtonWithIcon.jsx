@@ -7,6 +7,7 @@ export default function ButtonWithIcon({
 }) {
   return (
     <button
+      aria-label="button"
       className={`${className} flex items-center font-medium space-x-2 py-2 px-3 rounded-md border`}
       onClick={onClick}
       disabled={disabled}

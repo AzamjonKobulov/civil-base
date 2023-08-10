@@ -41,6 +41,7 @@ export default function Navbar() {
         <MenuOverlay onClose={handleClose} />
       ) : null}
       <button
+        aria-label="Menu button"
         className="lg:hidden w-8 h-8 border-2 border-gray-200 grid place-content-center rounded"
         onClick={handleOpen}
       >
@@ -58,7 +59,7 @@ export default function Navbar() {
         />
       </div>
       <div className="relative w-20 flex items-center space-x-3">
-        <button>
+        <button aria-label="Notifications">
           <BellIcon className="w-6 h-6 text-gray-400 hover:text-indigo-500" />
         </button>
         <button onClick={openModal}>
