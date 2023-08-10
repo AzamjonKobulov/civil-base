@@ -9,7 +9,7 @@ export default function MyModal({ closeModal, isDropOpen }) {
   return (
     <>
       <Transition appear show={isDropOpen} as={Fragment}>
-        <Dialog as="div" className="relative z-10" onClose={closeModal}>
+        <Dialog as="div" className="relative z-50" onClose={closeModal}>
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -19,7 +19,7 @@ export default function MyModal({ closeModal, isDropOpen }) {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="fixed inset-0 backdrop-blur" />
+            <div className="fixed inset-0 backdrop-blur top-14 lg:top-16" />
           </Transition.Child>
 
           <div className="fixed inset-0 overflow-y-auto">
