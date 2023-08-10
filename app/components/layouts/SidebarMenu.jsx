@@ -73,7 +73,7 @@ export default function SidebarMenu({ isOpen, onClose }) {
               href={link.path}
               className={`${
                 isActive ? 'bg-gray-100' : ''
-              } flex items-center justify-between rounded-md py-2 pl-2 pr-3`}
+              } flex items-center justify-between rounded-md hover:bg-gray-100 py-2 pl-2 pr-3`}
               onClick={onClose}
             >
               <div className="flex items-center space-x-3">

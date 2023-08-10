@@ -15,8 +15,3 @@
     @apply text-lg lg:text-xl text-brand-gray-200 font-semibold;
   }
 }
-
-.bg-blur {
-  background: rgba(217, 217, 217, 0.05);
-  backdrop-filter: blur(9px);
-}
